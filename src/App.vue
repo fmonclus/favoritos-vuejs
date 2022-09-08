@@ -35,8 +35,8 @@ const next = () => {
 };
 
 const top = () => {
-   window.scroll({top: 0, left: 0, behavior: 'smooth'});
-}
+  window.scroll({ top: 0, left: 0, behavior: "smooth" });
+};
 
 const prev = () => {
   inicio.value = inicio.value - postXpage;
@@ -74,7 +74,6 @@ const paginatePage = computed(() => posts.value.slice(inicio.value, fin.value));
       :maxLength="maxLength"
       class="mb-2"
     ></PaginatePost>
-
   </div>
 </template>
 
@@ -84,7 +83,7 @@ const paginatePage = computed(() => posts.value.slice(inicio.value, fin.value));
 h2 {
   font-size: calc(1.325rem + 0.9vw);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color:#0D6EFD;
+  color: #0d6efd;
 }
 
 .container {

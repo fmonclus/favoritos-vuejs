@@ -11,14 +11,14 @@ const emit = defineEmits(["next", "prev", "top"]);
             @click="emit('prev')"
             :disabled="inicio === 0"
         >
-            Previo
+            Pagina previa
         </button>
         <button
             type="button"
             class="btn btn-outline-primary"
             @click="emit('top')"            
         >
-            Ir a principio
+            Ir a principio 
         </button>
         <button
             type="button"
@@ -26,7 +26,7 @@ const emit = defineEmits(["next", "prev", "top"]);
             @click="emit('next')"
             :disabled="fin >= maxLength"
         >
-            Siguiente
+            Pagina siguiente
         </button>
     </div>
 </template>
