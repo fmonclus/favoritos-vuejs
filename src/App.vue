@@ -15,7 +15,7 @@ const loading = ref(false);
 onMounted(async () => {
   loading.value = true;
   try {
-    const res = await fetch(" /posts");
+    const res = await fetch("https://jsonplaceholder.typicode.com/posts");
     posts.value = await res.json();
   } catch (error) {
     console.log(error);
